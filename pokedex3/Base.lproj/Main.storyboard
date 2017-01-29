@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -87,18 +92,40 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meG-wm-UvQ">
+                                <rect key="frame" x="338" y="28" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="6I0-Gl-gqj"/>
+                                    <constraint firstAttribute="width" constant="29" id="WGp-XS-pp7"/>
+                                </constraints>
+                                <state key="normal" image="music.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PokeDex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0g-6t-bv5">
+                                <rect key="frame" x="129" y="24" width="117" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="KT7-8w-wVv"/>
+                                    <constraint firstAttribute="height" constant="33" id="oz3-cp-bKy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9Cz-dD-j1p" firstAttribute="top" secondItem="JAY-X5-1jI" secondAttribute="bottom" constant="20" id="269-ph-5fc"/>
+                            <constraint firstItem="JAY-X5-1jI" firstAttribute="top" secondItem="meG-wm-UvQ" secondAttribute="bottom" constant="8" id="4kj-0c-Wma"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Cz-dD-j1p" secondAttribute="bottom" constant="20" id="8q0-N9-jrE"/>
                             <constraint firstAttribute="trailing" secondItem="9Cz-dD-j1p" secondAttribute="trailing" constant="20" id="CUp-iv-N34"/>
                             <constraint firstAttribute="trailing" secondItem="JAY-X5-1jI" secondAttribute="trailing" id="ItY-WO-BOw"/>
                             <constraint firstItem="JJf-3p-MW6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JnL-8J-y1E"/>
+                            <constraint firstAttribute="trailing" secondItem="meG-wm-UvQ" secondAttribute="trailing" constant="8" id="KCG-nw-8Hk"/>
                             <constraint firstAttribute="trailing" secondItem="JJf-3p-MW6" secondAttribute="trailing" id="MCm-hd-n9f"/>
                             <constraint firstItem="JAY-X5-1jI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NoU-SJ-2ip"/>
+                            <constraint firstItem="JAY-X5-1jI" firstAttribute="top" secondItem="R0g-6t-bv5" secondAttribute="bottom" constant="8" id="P5J-5X-ikd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JJf-3p-MW6" secondAttribute="bottom" id="P5P-QJ-5Em"/>
                             <constraint firstItem="JAY-X5-1jI" firstAttribute="top" secondItem="Uik-pg-39N" secondAttribute="bottom" id="UQp-59-y9t"/>
+                            <constraint firstItem="R0g-6t-bv5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XvL-xb-gUf"/>
                             <constraint firstAttribute="trailing" secondItem="Uik-pg-39N" secondAttribute="trailing" id="cl8-PK-xcQ"/>
                             <constraint firstItem="JJf-3p-MW6" firstAttribute="top" secondItem="JAY-X5-1jI" secondAttribute="bottom" id="dVw-RW-u04"/>
                             <constraint firstItem="9Cz-dD-j1p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="dwv-dI-Rrc"/>
@@ -118,5 +145,6 @@
     <resources>
         <image name="4" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music.png" width="100" height="100"/>
     </resources>
 </document>
