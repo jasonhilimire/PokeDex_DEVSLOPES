@@ -99,6 +99,9 @@
                                     <constraint firstAttribute="width" constant="29" id="WGp-XS-pp7"/>
                                 </constraints>
                                 <state key="normal" image="music.png"/>
+                                <connections>
+                                    <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcX-lP-rXw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PokeDex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0g-6t-bv5">
                                 <rect key="frame" x="129" y="24" width="117" height="33"/>
