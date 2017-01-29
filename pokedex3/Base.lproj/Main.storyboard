@@ -33,7 +33,7 @@
                                     <constraint firstAttribute="height" constant="65" id="3VR-C0-F2O"/>
                                 </constraints>
                             </imageView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="JAY-X5-1jI">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="JAY-X5-1jI">
                                 <rect key="frame" x="0.0" y="65" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ufc-Tl-wFL"/>
@@ -103,7 +103,7 @@
                                     <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcX-lP-rXw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PokeDex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0g-6t-bv5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0g-6t-bv5">
                                 <rect key="frame" x="129" y="24" width="117" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="117" id="KT7-8w-wVv"/>
@@ -138,6 +138,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="9Cz-dD-j1p" id="XDu-1U-cGQ"/>
+                        <outlet property="searchBar" destination="JAY-X5-1jI" id="Aa9-Cp-fld"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
