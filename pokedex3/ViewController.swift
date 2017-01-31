@@ -94,7 +94,21 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // tells what to do when select the cell
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         view.endEditing(true)
+        
+        var poke: Pokemon!
+        
+        if inSearchMode {
+            
+            poke = filteredPokemon[indexPath.row]
+            
+        } else {
+     
+            poke = pokemon[indexPath.row]
+        }
+        
+        performSegue(withIdentifier: "PokemonDetailVC", sender: poke)
     }
+    
     // sets the number of items in collection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if inSearchMode {
@@ -153,5 +167,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
     }
+    
+// poke is the sender and it is of class Pokemon.  Destination viewcontroller that contains variable pokemon, setting to PokemonDetailVC's poke
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PokemonDetailVC" {
+            if let detailsVC = segue.destination as? PokemonDetailVC {
+                if let poke = sender as? Pokemon {
+                    detailsVC.pokemon = poke
+                }
+            }
+        }
+    }
+    
 }
 
