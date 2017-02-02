@@ -183,6 +183,9 @@
                                     <constraint firstAttribute="height" constant="38" id="ljj-hQ-sLc"/>
                                 </constraints>
                                 <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="Bii-v8-MF5" eventType="touchUpInside" id="6Jf-IG-jPw"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nnU-lX-ryp">
                                 <rect key="frame" x="16" y="73" width="335" height="263.5"/>
@@ -424,7 +427,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="3di-y4-6hD" id="dcA-65-Xcg"/>
+                        <outlet property="currentEvoImg" destination="BTJ-mO-f4i" id="RLE-Ny-Xgr"/>
+                        <outlet property="defenseLbl" destination="Svi-7u-Aht" id="8xI-zl-zZM"/>
+                        <outlet property="descriptionLbl" destination="K3Z-l3-uXb" id="4hs-EN-p1e"/>
+                        <outlet property="evoLbl" destination="Z4w-Nv-pEK" id="5xP-Ap-8Sf"/>
+                        <outlet property="heightLbl" destination="TWj-Me-uaN" id="yBX-6T-WnW"/>
+                        <outlet property="mainImg" destination="zF8-dH-gzD" id="8SF-RQ-cxJ"/>
                         <outlet property="nameLbl" destination="gbI-31-5Zs" id="0Lh-pc-tFZ"/>
+                        <outlet property="nextEvoImg" destination="1yJ-Lm-Nkg" id="iEU-Le-0iD"/>
+                        <outlet property="pokedexLbl" destination="OzW-Uj-gXE" id="MS3-BZ-obk"/>
+                        <outlet property="typeLbl" destination="MjC-rh-mXy" id="ZFj-CC-5Ac"/>
+                        <outlet property="weightLbl" destination="DaP-c9-gUa" id="iuM-GO-b61"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gqh-IO-yiw" userLabel="First Responder" sceneMemberID="firstResponder"/>
