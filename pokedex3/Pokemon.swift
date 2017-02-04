@@ -24,7 +24,7 @@ class Pokemon {
     private var _pokemonURL: String!
    
     
-    //DATA PROTECTION ensure that we are getting and actual value and if we dont instead of nil just returns an empty string
+    //DATA PROTECTION ensure that we are getting an actual value and if we dont instead of nil just returns an empty string
     
     var description: String {
         
@@ -32,7 +32,7 @@ class Pokemon {
             
             _description = ""
         }
-        return _description 
+        return _description
     }
     
     var type: String {
@@ -106,7 +106,7 @@ class Pokemon {
         
     }
     
-    func downloadPokemonDetail(completed: DownloadComplete) {
+    func downloadPokemonDetail(completed: @escaping DownloadComplete) {
         Alamofire.request(_pokemonURL).responseJSON { (response) in
             
             if let dict = response.result.value as? Dictionary<String, AnyObject> {
@@ -138,7 +138,9 @@ class Pokemon {
                 print(self._defense)
             
             }
+          completed()
         }
+        
     }
     
 }
