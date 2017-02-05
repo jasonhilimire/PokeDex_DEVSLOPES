@@ -26,12 +26,14 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var nextEvoImg: UIImageView!
     @IBOutlet weak var evoLbl: UILabel!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        activityIndicator.startAnimating()
         nameLbl.text = pokemon.name
         
         let img = UIImage(named: "\(pokemon.pokedexId)")
@@ -68,6 +70,8 @@ class PokemonDetailVC: UIViewController {
             let str = "Next Evolution: \(pokemon.nextEvolutionName) - LVL \(pokemon.nextEvolutionLevel)"
             evoLbl.text = str
         }
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
         
     }
 
