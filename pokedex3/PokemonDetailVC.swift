@@ -34,6 +34,12 @@ class PokemonDetailVC: UIViewController {
 
         nameLbl.text = pokemon.name
         
+        let img = UIImage(named: "\(pokemon.pokedexId)")
+        
+        mainImg.image = img
+        currentEvoImg.image = img
+        pokedexLbl.text = "\(pokemon.pokedexId)"
+        
         pokemon.downloadPokemonDetail {
             
             print("Did Arrive here?")
