@@ -167,7 +167,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charmander" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbI-31-5Zs">
-                                <rect key="frame" x="88" y="19" width="200" height="38"/>
+                                <rect key="frame" x="87.5" y="19" width="200" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="HgD-WO-Spv"/>
                                     <constraint firstAttribute="width" constant="200" id="cJI-8b-HH2"/>
@@ -378,52 +378,59 @@
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zp6-AJ-X7O">
-                                <rect key="frame" x="0.0" y="421.5" width="375" height="35"/>
+                                <rect key="frame" x="0.0" y="371.5" width="375" height="35"/>
                                 <color key="backgroundColor" red="0.93440347909999999" green="0.40369927880000001" blue="0.40875646469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="zoi-Lx-AFb"/>
+                                    <constraint firstAttribute="height" constant="35" id="MxF-Sd-y9h"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="thr-oa-0iy">
-                                <rect key="frame" x="53" y="478" width="270" height="170"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BTJ-mO-f4i">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yJ-Lm-Nkg">
-                                        <rect key="frame" x="150" y="0.0" width="120" height="170"/>
-                                    </imageView>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution Venosaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4w-Nv-pEK">
+                                <rect key="frame" x="43.5" y="379.5" width="288" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="169.5" id="Hwp-U0-Keq"/>
+                                    <constraint firstAttribute="height" constant="20" id="5Nh-GN-u1b"/>
+                                    <constraint firstAttribute="width" constant="288" id="Plw-ZO-HLX"/>
                                 </constraints>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Next Evolution Venosaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4w-Nv-pEK">
-                                <rect key="frame" x="16" y="292" width="288" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="thr-oa-0iy">
+                                <rect key="frame" x="52.5" y="426.5" width="270" height="120"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BTJ-mO-f4i">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="YTv-O0-KqE"/>
+                                            <constraint firstAttribute="width" constant="120" id="rRa-jZ-XjW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1yJ-Lm-Nkg">
+                                        <rect key="frame" x="150" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="YuA-3i-qHd"/>
+                                            <constraint firstAttribute="width" constant="120" id="aLk-h0-pO4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="nnU-lX-ryp" secondAttribute="trailing" constant="8" id="3Gq-eS-yah"/>
-                            <constraint firstItem="Zp6-AJ-X7O" firstAttribute="leading" secondItem="WfL-2c-pP3" secondAttribute="leading" id="4sf-IO-Rdm"/>
-                            <constraint firstItem="Z4w-Nv-pEK" firstAttribute="leading" secondItem="WfL-2c-pP3" secondAttribute="leading" constant="16" id="67G-fN-yaE"/>
-                            <constraint firstItem="Z4w-Nv-pEK" firstAttribute="centerX" secondItem="Zp6-AJ-X7O" secondAttribute="centerX" id="IlH-6U-Hy8"/>
+                            <constraint firstItem="Zp6-AJ-X7O" firstAttribute="centerX" secondItem="WfL-2c-pP3" secondAttribute="centerX" id="3ky-Qn-CmK"/>
                             <constraint firstItem="VDR-HV-OXp" firstAttribute="leading" secondItem="WfL-2c-pP3" secondAttribute="leadingMargin" id="MLx-z8-ZgC"/>
-                            <constraint firstAttribute="trailing" secondItem="Zp6-AJ-X7O" secondAttribute="trailing" id="P0s-bu-gWd"/>
-                            <constraint firstItem="thr-oa-0iy" firstAttribute="centerX" secondItem="WfL-2c-pP3" secondAttribute="centerX" id="RvM-rF-6Yf"/>
+                            <constraint firstAttribute="trailing" secondItem="Zp6-AJ-X7O" secondAttribute="trailing" id="PiN-Fj-SNw"/>
                             <constraint firstItem="gbI-31-5Zs" firstAttribute="centerX" secondItem="WfL-2c-pP3" secondAttribute="centerX" id="SHw-2V-Okj"/>
-                            <constraint firstItem="Z4w-Nv-pEK" firstAttribute="top" secondItem="Zp6-AJ-X7O" secondAttribute="bottom" constant="-27.5" id="Swe-K7-Fkd"/>
                             <constraint firstAttribute="trailing" secondItem="CmD-BX-cto" secondAttribute="trailing" id="bPY-lc-sC9"/>
+                            <constraint firstItem="Zp6-AJ-X7O" firstAttribute="leading" secondItem="WfL-2c-pP3" secondAttribute="leading" id="dct-G1-XkE"/>
+                            <constraint firstItem="thr-oa-0iy" firstAttribute="centerX" secondItem="WfL-2c-pP3" secondAttribute="centerX" id="dmQ-aE-cfm"/>
                             <constraint firstItem="nnU-lX-ryp" firstAttribute="top" secondItem="CmD-BX-cto" secondAttribute="bottom" constant="20" id="hUF-hP-cOx"/>
+                            <constraint firstItem="Z4w-Nv-pEK" firstAttribute="centerY" secondItem="Zp6-AJ-X7O" secondAttribute="centerY" id="i6J-vn-icm"/>
+                            <constraint firstItem="Z4w-Nv-pEK" firstAttribute="centerX" secondItem="WfL-2c-pP3" secondAttribute="centerX" id="iXE-w2-n7S"/>
                             <constraint firstItem="gbI-31-5Zs" firstAttribute="top" secondItem="WfL-2c-pP3" secondAttribute="topMargin" constant="19" id="jsC-SM-CZt"/>
-                            <constraint firstItem="thr-oa-0iy" firstAttribute="top" secondItem="Zp6-AJ-X7O" secondAttribute="bottom" constant="20" id="okL-pN-K1Y"/>
                             <constraint firstItem="nnU-lX-ryp" firstAttribute="leading" secondItem="WfL-2c-pP3" secondAttribute="leadingMargin" id="pT3-aw-B2d"/>
-                            <constraint firstAttribute="trailing" secondItem="Z4w-Nv-pEK" secondAttribute="trailing" constant="16" id="qK7-Mg-ivh"/>
-                            <constraint firstItem="Z4w-Nv-pEK" firstAttribute="centerY" secondItem="WfL-2c-pP3" secondAttribute="centerY" constant="106.5" id="r9q-e5-Uil"/>
-                            <constraint firstItem="0Vk-uw-8fJ" firstAttribute="top" secondItem="thr-oa-0iy" secondAttribute="bottom" constant="20" id="s5m-xF-nwb"/>
+                            <constraint firstItem="Zp6-AJ-X7O" firstAttribute="top" secondItem="0AB-VF-3Kx" secondAttribute="bottom" constant="7.5" id="pYe-e7-axk"/>
+                            <constraint firstItem="thr-oa-0iy" firstAttribute="top" secondItem="Zp6-AJ-X7O" secondAttribute="bottom" constant="20" id="rnc-ZO-lCv"/>
                             <constraint firstItem="CmD-BX-cto" firstAttribute="leading" secondItem="WfL-2c-pP3" secondAttribute="leading" id="tHd-Yf-Wuf"/>
                             <constraint firstItem="VDR-HV-OXp" firstAttribute="top" secondItem="WfL-2c-pP3" secondAttribute="topMargin" constant="19" id="yJU-qS-TXL"/>
                             <constraint firstItem="CmD-BX-cto" firstAttribute="top" secondItem="WfL-2c-pP3" secondAttribute="top" id="zwk-jH-Jqe"/>
